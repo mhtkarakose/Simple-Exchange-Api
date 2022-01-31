@@ -1,0 +1,437 @@
+{
+	"info": {
+		"_postman_id": "ac80711d-a2e3-4b5c-a60e-97c1f371c7d1",
+		"name": "Simple-Exchange-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}user/getAll",
+							"host": [
+								"{{localhost}}user"
+							],
+							"path": [
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Bulk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}user/bulk",
+							"host": [
+								"{{localhost}}user"
+							],
+							"path": [
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"mehmet\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}user/",
+							"host": [
+								"{{localhost}}user"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"apf\",\n    \"price\": 10.01234,\n    \"stock\": 100,\n    \"creator\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}user/",
+							"host": [
+								"{{localhost}}user"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Share Definition",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}shareDefinition/getAll",
+							"host": [
+								"{{localhost}}shareDefinition"
+							],
+							"path": [
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Bulk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}shareDefinition/bulk",
+							"host": [
+								"{{localhost}}shareDefinition"
+							],
+							"path": [
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"let\",\n    \"price\" : 15.123,\n    \"stock\": 180,\n    \"creator\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}shareDefinition/",
+							"host": [
+								"{{localhost}}shareDefinition"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}shareDefinition/",
+							"host": [
+								"{{localhost}}shareDefinition"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Portfolio",
+			"item": [
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 4,\n    \"shareDefinitionId\": 18\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}portfolio/getAll",
+							"host": [
+								"{{localhost}}portfolio"
+							],
+							"path": [
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Bulk Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}portfolio/bulk",
+							"host": [
+								"{{localhost}}portfolio"
+							],
+							"path": [
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 5,\n    \"shareDefinitionId\": 30\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}portfolio/",
+							"host": [
+								"{{localhost}}portfolio"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}portfolio/",
+							"host": [
+								"{{localhost}}portfolio"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Share Pool",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}sharePool/getAll",
+							"host": [
+								"{{localhost}}sharePool"
+							],
+							"path": [
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Bulk",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n        { \"id\": 1000, \"shareDefinitionId\": 1000, \"stock\": 10, \"userId\": 1000, \"status\": \"BUY\" }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}sharePool/bulk",
+							"host": [
+								"{{localhost}}sharePool"
+							],
+							"path": [
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create BUY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 1000,\n    \"shareDefinitionId\": 1000,\n    \"stock\": 175,\n    \"status\": \"BUY\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}sharePool/",
+							"host": [
+								"{{localhost}}sharePool"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create SELL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 1000,\n    \"shareDefinitionId\": 1000,\n    \"stock\": 175,\n    \"status\": \"SELL\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}sharePool/",
+							"host": [
+								"{{localhost}}sharePool"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}sharePool/",
+							"host": [
+								"{{localhost}}sharePool"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://localhost:3000/api/v1/"
+		}
+	]
+}
